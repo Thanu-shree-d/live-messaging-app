@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Chat box */
+.chat {
+  width: 380px;
+  height: 600px;
+  background: #111;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  padding: 15px;
+  background: #1f1f1f;
+  color: white;
+}
+
+.status {
+  font-size: 12px;
+  color: lightgreen;
+}
+
+/* Messages */
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Bubbles */
+.bubble {
+  max-width: 70%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 12px;
+  color: white;
+}
+
+.me {
+  background: #4caf50;
+  margin-left: auto;
+}
+
+.bubble:not(.me) {
+  background: #333;
+}
+
+.bubble span {
+  font-size: 10px;
+  display: block;
+  text-align: right;
+}
+
+/* Typing */
+.typing {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
+
+/* Input */
+.inputBox {
+  display: flex;
+  padding: 10px;
+  background: #1f1f1f;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.inputBox button {
+  margin-left: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Emoji */
+.emoji {
+  position: absolute;
+  bottom: 80px;
+}
